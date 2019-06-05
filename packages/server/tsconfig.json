@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "outDir": "build",
+      "module": "commonjs",
+      "target": "es6",
+      "allowJs": false,
+      "moduleResolution": "node",
+      "rootDir": ".",
+      "strict": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+    },
+    "exclude": ["node_modules", "build"]
+  }
+  

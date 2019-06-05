@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "name": "next-express-now-monorepo",
+    "builds": [
+      {
+        "src": "packages/server/index.ts",
+        "use": "@now/node"
+      },
+      {
+        "src": "packages/ui/next.config.js",
+        "use": "@now/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/packages/server/index.ts"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/packages/ui/$1"
+      }
+    ]
+  }
+  
